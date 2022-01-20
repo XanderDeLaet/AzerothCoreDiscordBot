@@ -1,0 +1,49 @@
+{
+  "name": "@rodrigogs/mysql-events",
+  "version": "0.6.0",
+  "license": "BSD-3-Clause",
+  "description": "A node.js package that watches a MySQL database and runs callbacks on matched events like updates on tables and/or specific columns.",
+  "homepage": "https://github.com/rodrigogs/mysql-events",
+  "keywords": [
+    "mysql",
+    "events",
+    "trigger",
+    "notify",
+    "watcher"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rodrigogs/mysql-events.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint . --ext .js",
+    "test": "npm run test:55 && npm run test:56 && npm run test:57 && npm run test:80",
+    "test:55": "cross-env DATABASE_PORT=3355 jest --forceExit --runInBand",
+    "test:56": "cross-env DATABASE_PORT=3356 jest --forceExit --runInBand",
+    "test:57": "cross-env DATABASE_PORT=3357 jest --forceExit --runInBand",
+    "test:80": "cross-env DATABASE_PORT=3380 jest --forceExit --runInBand",
+    "test:local": "./scripts/test.sh",
+    "coverage": "nyc --reporter=lcov npm test"
+  },
+  "dependencies": {
+    "@rodrigogs/zongji": "^0.4.14",
+    "debug": "^4.1.1",
+    "debuggler": "^1.0.0",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "codeclimate-test-reporter": "^0.5.1",
+    "cross-env": "^5.2.0",
+    "dotenv-cli": "^2.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "jest": "^24.8.0",
+    "nyc": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  }
+}
