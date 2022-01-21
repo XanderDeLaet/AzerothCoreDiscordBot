@@ -12,6 +12,8 @@ Requirements:
 
 Installation:
     - Run "npm install", this will install all dependencies
+    - Rename "config_template.js" to "config.js" and insert all your token, usernames, passwords, ...
+    - Make sure your AzerothCore server has enabled SOAP.
 
 Startup: 
     - Use a terminal
