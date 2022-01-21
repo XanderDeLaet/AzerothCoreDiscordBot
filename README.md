@@ -22,5 +22,6 @@ Startup:
     - Use a terminal
     - Command: npm start
 
+Extra information:
 
-
+    - Special thanks to Village#9461 (no github) for funding the project.
