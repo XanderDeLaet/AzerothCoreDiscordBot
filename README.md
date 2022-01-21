@@ -10,6 +10,9 @@ Requirements:
     - Modules (Should be included in this project already)
     - Discord Account with a bot account for bot token
 
+Installation:
+    - Run "npm install", this will install all dependencies
+
 Startup: 
     - Use a terminal
     - Command: npm start
