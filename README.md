@@ -1,3 +1,6 @@
+# Project Status: Abandoned
+Note: This repository is no longer actively maintained or updated.
+
 Bot startup
 ----------------------------
 
